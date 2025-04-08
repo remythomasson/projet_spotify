@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Avatar</title>
+    <g id="Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Recherche" transform="translate(-25.000000, -333.000000)">
+            <g id="Group" transform="translate(15.000000, 178.000000)">
+                <g id="Table-View" transform="translate(0.000000, 145.000000)">
+                    <g id="Avatar" transform="translate(10.000000, 10.000000)">
+                        <circle id="Oval-6" stroke="#E6E6E6" fill="#FFFFFF" cx="25" cy="25" r="24.5"></circle>
+                        <path d="M25,13.3333333 C27.7666667,13.3333333 30,15.5666667 30,18.3333333 C30,21.1 27.7666667,23.3333333 25,23.3333333 C22.2333333,23.3333333 20,21.1 20,18.3333333 C20,15.5666667 22.2333333,13.3333333 25,13.3333333 L25,13.3333333 Z M25,37 C20.8333333,37 17.15,34.8666667 15,31.6333333 C15.05,28.3166667 21.6666667,26.5 25,26.5 C28.3166667,26.5 34.95,28.3166667 35,31.6333333 C32.85,34.8666667 29.1666667,37 25,37 L25,37 Z" id="Shape" fill="#E6E6E6"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="12px" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Album" transform="translate(-36.000000, -302.000000)" fill="#8D8D8D">
+            <g id="Rating" transform="translate(15.000000, 286.000000)">
+                <g transform="translate(15.000000, 11.000000)" id="Shape">
+                    <polygon points="12.3157895 14.6442105 16.2189474 17 15.1831579 12.56 18.6315789 9.57263158 14.0905263 9.18736842 12.3157895 5 10.5410526 9.18736842 6 9.57263158 9.44842105 12.56 8.41263158 17"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

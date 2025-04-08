@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="11px" viewBox="0 0 12 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artist-Profile" transform="translate(-344.000000, -60.000000)" fill="#1BB46B">
+            <g id="Top-Bar" transform="translate(0.000000, 44.000000)">
+                <g id="Like" transform="translate(336.000000, 6.000000)">
+                    <path d="M14,21 L13.13,20.2087193 C10.04,17.4092643 8,15.5629428 8,13.2970027 C8,11.4506812 9.452,10 11.3,10 C12.344,10 13.346,10.4855586 14,11.252861 C14.654,10.4855586 15.656,10 16.7,10 C18.548,10 20,11.4506812 20,13.2970027 C20,15.5629428 17.96,17.4092643 14.87,20.2147139 L14,21 L14,21 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
