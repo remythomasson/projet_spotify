@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatefulWidget {
   final Widget child;
-  const HomeScreen({super.key, required this.child});
+
+  const HomeScreen({Key? key, required this.child}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -12,17 +14,22 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
-  static const List<String> _routes = [
-    '/charts',
-    '/search',
-    '/favorites',
-  ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
-    context.go(_routes[index]);
+
+    switch (index) {
+      case 0:
+        context.go('/charts');
+        break;
+      case 1:
+        context.go('/search');
+        break;
+      case 2:
+        context.go('/favorites');
+        break;
+    }
   }
 
   @override
@@ -32,16 +39,25 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        items: const [
+        selectedItemColor: const Color(0xFF1BB46B),
+        unselectedItemColor: Colors.grey,
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.bar_chart),
+            icon: SvgPicture.asset(
+              'assets/icons/Accueil_classements.svg',
+              colorFilter: ColorFilter.mode(
+                _selectedIndex == 0 ? const Color(0xFF1BB46B) : Colors.grey,
+                BlendMode.srcIn,
+              ),
+              height: 24,
+            ),
             label: 'Classements',
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Recherche',
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.favorite),
             label: 'Favoris',
           ),

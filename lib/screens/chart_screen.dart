@@ -39,71 +39,70 @@ class _ChartScreenState extends State<ChartScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 32),
-              Row(
-                children: [
-                  SvgPicture.asset('assets/icons/Accueil_classements.svg', height: 28),
-                  const SizedBox(width: 12),
-                  const Text(
-                    'Classements',
-                    style: TextStyle(
-                      fontSize: 36,
-                      fontWeight: FontWeight.w800,
-                      height: 1.11, // 40px line height / 36px font size
-                      fontFamily: 'SF Pro Display', // optionnel, à activer si disponible
-                    ),
-                  ),
-                ],
+              const Text(
+                'Classements',
+                style: TextStyle(
+                  fontSize: 36,
+                  fontWeight: FontWeight.w800,
+                  height: 1.11,
+                  fontFamily: 'SF Pro Display',
+                ),
               ),
               const SizedBox(height: 24),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  GestureDetector(
-                    onTap: () => setState(() => showTracks = true),
-                    child: Column(
-                      children: [
-                        Text(
-                          'Titres',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: showTracks ? green : Colors.grey,
-                          ),
-                        ),
-                        if (showTracks)
-                          Container(
-                            margin: const EdgeInsets.only(top: 4),
-                            height: 2,
-                            width: 60,
-                            color: green,
-                          ),
-                      ],
-                    ),
+              Container(
+                decoration: const BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(color: Colors.grey, width: 0.2),
                   ),
-                  const SizedBox(width: 32),
-                  GestureDetector(
-                    onTap: () => setState(() => showTracks = false),
-                    child: Column(
-                      children: [
-                        Text(
-                          'Albums',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: !showTracks ? green : Colors.grey,
-                          ),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () => setState(() => showTracks = true),
+                        child: Column(
+                          children: [
+                            Text(
+                              'Titres',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: showTracks ? green : Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Container(
+                              height: 2,
+                              color: showTracks ? green : Colors.transparent,
+                            ),
+                          ],
                         ),
-                        if (!showTracks)
-                          Container(
-                            margin: const EdgeInsets.only(top: 4),
-                            height: 2,
-                            width: 60,
-                            color: green,
-                          ),
-                      ],
+                      ),
                     ),
-                  ),
-                ],
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () => setState(() => showTracks = false),
+                        child: Column(
+                          children: [
+                            Text(
+                              'Albums',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: !showTracks ? green : Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            Container(
+                              height: 2,
+                              color: !showTracks ? green : Colors.transparent,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(height: 16),
               Expanded(
